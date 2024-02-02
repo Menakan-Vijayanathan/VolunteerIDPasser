@@ -1,62 +1,51 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../components/styles/Home.module.css';
+import Searchbar from '../components/Searchbar.js';
+import { useState } from 'react';
+import react from 'react';
 
 export default function Home() {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+    // You can perform your search logic here using the entered term
+  };
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Sirakukal Amaiyam</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://www.sirakukal.live/">Sirakukal Amaiyam</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+        Welcome to our Volunteer Database! To initiate the registration process and identify your volunteer ID.
         </p>
+       
+       <div>
+        <Searchbar onSearch={handleSearch} />
+       </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+       <div>
+          <h2>Search Results</h2>
+          <p>{searchTerm ? `Showing results for: ${searchTerm}` : 'No search term entered'}</p>
         </div>
+        
       </main>
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://menakanvijayanathan.blogspot.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Developed by{' '} 𝔇𝔢𝔱𝔞𝔠𝔥
         </a>
       </footer>
 
