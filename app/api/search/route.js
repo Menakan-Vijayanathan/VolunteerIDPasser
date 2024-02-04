@@ -1,4 +1,4 @@
-import { searchVolunteers } from "../../db/volunteerUtil"
+import { searchVolunteers } from "../../../db/volunteerUtil"
 
 export async function GET(req) {
     try {

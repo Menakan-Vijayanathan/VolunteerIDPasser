@@ -19,7 +19,7 @@ const Search = () => {
 
         try {
             // Send a GET request to the "/api" route with the search term as a query parameter
-            const response = await fetch(`/api?nic=${nic}`, {
+            const response = await fetch(`/api/search?nic=${nic}`, {
                 method: 'GET',
                 headers: {
                     // You can add headers if needed
