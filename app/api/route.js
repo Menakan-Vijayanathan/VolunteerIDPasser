@@ -1,6 +1,6 @@
 import { searchVolunteers } from "../../db/volunteerUtil"
 
-export default async function GET(req) {
+export async function GET(req) {
     try {
       const result = await searchVolunteers(req);
       
