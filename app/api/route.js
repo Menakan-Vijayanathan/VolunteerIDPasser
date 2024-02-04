@@ -1,6 +1,8 @@
+export const dynamic = 'force-dynamic'
+
 import { searchVolunteers } from "../../db/volunteerUtil"
 
-export async function GET(req) {
+export default async function GET(req) {
     try {
       const result = await searchVolunteers(req);
       
