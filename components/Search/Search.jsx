@@ -68,7 +68,7 @@ const Search = () => {
                         <p>Data:</p>
                         <ul>
                             {/* Assuming _id, name, and nic are properties of data */}
-                            <li>ID: {data.result[0]._id}</li>
+                            <li>Volunteer ID: சி/அ/{data.result[0].vid}</li>
                             <li>Name: {data.result[0].name}</li>
                             <li>NIC: {data.result[0].nic}</li>
                         </ul>
