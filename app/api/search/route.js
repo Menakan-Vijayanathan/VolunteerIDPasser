@@ -10,7 +10,7 @@ export async function GET(req) {
         return Response.json({ result }, {status: 200})
       } else {
         // If the response status is not successful, handle the error
-        return Response.json({ error: result}, { status: 404 })
+        return Response.json({ error: req}, { status: 404 })
       }
     } catch (error) {
       console.error('Error:', error.message);
