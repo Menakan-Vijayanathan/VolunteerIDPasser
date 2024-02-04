@@ -6,7 +6,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "fontawesome": "^5.6.3",
+    "fs": "^0.0.1-security",
+    "mongodb": "^6.3.0",
+    "mongodb-client-encryption": "^6.0.0",
+    "mongoose": "^8.1.1",
     "next": "latest",
+    "next.js": "^1.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
