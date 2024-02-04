@@ -3,6 +3,7 @@ import { searchVolunteers } from "../../../db/volunteerUtil"
 export async function GET(req) {
     try {
       const result = await searchVolunteers(req);
+      console.log(result);
       
       // Check if the response indicates a successful request (status code 2xx)
       if (result && Object.keys(result).length !== 0) {
