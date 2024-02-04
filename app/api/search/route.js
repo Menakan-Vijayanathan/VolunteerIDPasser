@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { searchVolunteers } from "../../../db/volunteerUtil"
 
 export async function GET(req) {
