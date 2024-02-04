@@ -1,21 +1,25 @@
 .searchBar {
     display: flex;
     align-items: center;
-  }
-  
-  .input {
+}
+
+.input {
     padding: 8px;
     margin-right: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-  }
-  
-  .button {
+}
+
+.button {
     padding: 8px 12px;
     background-color: #0070f3;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
+}
+
+.searchArea {
+    display: flex;
+    flex-direction: column;
+}
