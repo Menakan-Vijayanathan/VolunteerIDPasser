@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import connectMongo from './connectMongo.js';
 import Volunteer from "../models/volunteer.js";
 
