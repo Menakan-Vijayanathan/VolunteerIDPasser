@@ -8,7 +8,7 @@ const Footer = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Developed by{' '} 𝔇𝔢𝔱𝔞𝔠𝔥
+          Developed by Menakan (Detech)
         </a>
       </footer>
     )
