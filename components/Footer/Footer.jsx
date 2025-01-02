@@ -4,11 +4,11 @@ const Footer = (props) => {
     return(
         <footer className='footer'>
         <a
-          href="https://menakanvijayanathan.blogspot.com/"
+          href="https://www.detech.live/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <center>Developed by Menakan (Detech) </center>
+          <center>Developed by Detech </center>
         </a>
       </footer>
     )
